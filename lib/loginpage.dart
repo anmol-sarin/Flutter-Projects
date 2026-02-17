@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:new_application/app_colors.dart';
+
 
 class LoginPage extends StatelessWidget{
   const LoginPage({super.key});
@@ -6,43 +8,41 @@ class LoginPage extends StatelessWidget{
   @override
   Widget build (BuildContext context){
     return MaterialApp(
-      home : Scaffold(backgroundColor:Colors.blueGrey[100],
-        appBar:AppBar(
-          titleSpacing: 150,
-          title:Text("New App",textAlign: TextAlign.center,),
-          backgroundColor: Colors.blueGrey[400],
-        ),
-        body:Padding(padding: EdgeInsetsGeometry.all(15),
+      home : Scaffold(
+        backgroundColor:AppColors.background,
+        
+        body:Padding(padding: EdgeInsetsGeometry.all(24),
         child: 
         Column(
           children: [
 
-
-            Text("Hello, Welcome Back !",
+            SizedBox(height: 68,),
+            Text("Hello, User !",
               style:TextStyle(
                 fontSize:30,
                 fontWeight:FontWeight.bold,
-                color: Colors.blueAccent
+                color: AppColors.font
+
                 )  
               ),
 
 
             SizedBox(
-              height:5 ,
+              height:16 ,
             ),
 
 
             Text("Login to Continue :",
               style:TextStyle(
-                color:Colors.blueAccent,
+                color:AppColors.font,
                 fontWeight: FontWeight.bold,
-                fontSize:20
+                fontSize:18
               ),
             ),
 
 
             SizedBox(
-              height:20 ,
+              height:60,
             ),
 
             TextField( 
@@ -50,12 +50,12 @@ class LoginPage extends StatelessWidget{
               hintText:"Username",
               border:OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20) )),
               filled:true,
-              fillColor:Colors.blueGrey.withOpacity(0.3) 
+              fillColor:AppColors.disFont,
               )
             ),
 
 
-            SizedBox(height:12 ,),
+            SizedBox(height:26 ,),
 
 
             TextField(
@@ -63,7 +63,7 @@ class LoginPage extends StatelessWidget{
               hintText:"Password",
               border:OutlineInputBorder(borderRadius:BorderRadius.all(Radius.circular(20))),
               filled:true,
-              fillColor:Colors.blueGrey.withOpacity(0.3)
+              fillColor:AppColors.disFont
               )
             ),
 
@@ -75,7 +75,7 @@ class LoginPage extends StatelessWidget{
                   print("clicked Forgot button");
                 },
                 style:TextButton.styleFrom(
-                  foregroundColor: Colors.brown
+                  foregroundColor: AppColors.textButColor
                 ),
                 child:
                   Text("Forgot Password ? ",style:TextStyle(fontSize:15)),
@@ -89,7 +89,7 @@ class LoginPage extends StatelessWidget{
               child: ElevatedButton(
                 style:ElevatedButton.styleFrom(
                   foregroundColor: Colors.black,
-                  backgroundColor: Colors.blueAccent
+                  backgroundColor: AppColors.primary
                 ),
                 onPressed:(){
                   print("clicked Login button");
@@ -104,7 +104,7 @@ class LoginPage extends StatelessWidget{
           ),
 
 
-          Text("Or sign in with"),
+          Text("Or sign in with",style:TextStyle(color:AppColors.font,fontSize:18),),
 
 
 

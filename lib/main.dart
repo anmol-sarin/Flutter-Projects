@@ -6,11 +6,16 @@ void main() {
 }
 
 class MyApp extends StatelessWidget{
-
+ const MyApp({super.key});
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      theme:ThemeData(fontFamily: "Ubuntu"),
+      theme:ThemeData(
+        fontFamily: "Ubuntu",
+        textTheme: TextTheme(
+          bodyMedium: TextStyle(color: Colors.white)
+        )
+      ),
       home:LoginPage()
     );
   }
