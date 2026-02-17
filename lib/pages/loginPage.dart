@@ -91,7 +91,7 @@ class LoginPage extends StatelessWidget{
                   backgroundColor: AppColors.primary
                 ),
                 onPressed:(){
-                  print("clicked Login button");
+                  Navigator.of(context).pushNamed('/home');
                 },
                 child:Text("Login",style:TextStyle(fontWeight:FontWeight.w900))
               )
