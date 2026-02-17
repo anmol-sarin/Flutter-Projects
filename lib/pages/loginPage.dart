@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_application/app_colors.dart';
+import 'package:new_application/styles/app_colors.dart';
 
 
 class LoginPage extends StatelessWidget{
@@ -11,39 +11,38 @@ class LoginPage extends StatelessWidget{
       home : Scaffold(
         backgroundColor:AppColors.background,
         
-        body:Padding(padding: EdgeInsetsGeometry.all(24),
-        child: 
-        Column(
-          children: [
-
-            SizedBox(height: 68,),
-            Text("Hello, User !",
-              style:TextStyle(
-                fontSize:30,
-                fontWeight:FontWeight.bold,
-                color: AppColors.font
-
+        body:
+        SingleChildScrollView(
+          child:Padding(padding: EdgeInsetsGeometry.all(24),
+            child: SizedBox(height: MediaQuery.of(context).size.height,
+              child:
+              Column(
+                children: [
+                Spacer(),
+                Text("Hello, User !",
+                  style:TextStyle(
+                  fontSize:30,
+                  fontWeight:FontWeight.bold,
+                  color: AppColors.font
                 )  
               ),
 
 
-            SizedBox(
-              height:16 ,
-            ),
+                SizedBox(
+                  height:16 ,
+                ),
 
 
-            Text("Login to Continue :",
-              style:TextStyle(
-                color:AppColors.font,
-                fontWeight: FontWeight.bold,
-                fontSize:18
-              ),
-            ),
+                Text("Login to Continue :",
+                  style:TextStyle(
+                  color:AppColors.font,
+                  fontWeight: FontWeight.bold,
+                  fontSize:18
+                  ),
+                ),
 
 
-            SizedBox(
-              height:60,
-            ),
+              Spacer(),
 
             TextField( 
               decoration:InputDecoration(
@@ -83,7 +82,7 @@ class LoginPage extends StatelessWidget{
             ),
 
 
-
+            Spacer(),
             SizedBox(
               width:165,
               child: ElevatedButton(
@@ -98,16 +97,14 @@ class LoginPage extends StatelessWidget{
               )
             ),
             
-          
-          SizedBox(
-            height:100,
-          ),
-
+          Spacer(),
 
           Text("Or sign in with",style:TextStyle(color:AppColors.font,fontSize:18),),
 
 
-
+          SizedBox(
+            height:24,
+          ),
           ElevatedButton(
             style:ElevatedButton.styleFrom(
               foregroundColor: Colors.black,
@@ -125,6 +122,9 @@ class LoginPage extends StatelessWidget{
                 Text('Login with Google')]
               )
           ),
+            SizedBox(
+              height:15,
+            ),
 
 
             ElevatedButton(
@@ -146,25 +146,32 @@ class LoginPage extends StatelessWidget{
               )
               ),
 
-
+            SizedBox(
+              height:24
+            ),
 
             Row(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Text("Don't have an account "),
+              Text("Don't have an account ?",style:TextStyle(color: AppColors.font,fontSize: 18)),
               TextButton(
                 style:TextButton.styleFrom(
-                  foregroundColor: Colors.blueAccent
+                  foregroundColor: AppColors.primary
                 ),
-                onPressed:(){},
-                child:Text("Sign up here",style:TextStyle(decoration:TextDecoration.underline),
+                onPressed:(){
+                  print("clicked Sign up button");
+                },
+                child:Text("Sign up ",style:TextStyle(decoration:TextDecoration.underline,fontSize:18),
                 )
                 ),
             ],
-            )
+            ),
+            Spacer()
               
           ],)
-        )
+          )
+          )
+          )
       )
     );
   }
