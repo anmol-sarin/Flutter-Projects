@@ -19,7 +19,7 @@ class LoginPage extends StatelessWidget{
               Column(
                 children: [
                 Spacer(),
-                Text("Hello, !",
+                Text("Hello, User !",
                   style:TextStyle(
                   fontSize:30,
                   fontWeight:FontWeight.bold,
