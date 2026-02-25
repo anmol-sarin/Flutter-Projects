@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:new_application/pages/home_page.dart';
-import 'package:new_application/pages/loginPage.dart';
+// import 'package:flutter/material.dart';
+// import 'package:new_application/pages/home_page.dart';
+// import 'package:new_application/pages/loginPage.dart';
 
 void main() {
-  // runApp(MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget{
