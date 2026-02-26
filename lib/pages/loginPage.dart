@@ -9,7 +9,7 @@ class LoginPage extends StatelessWidget{
   Widget build (BuildContext context){
     return MaterialApp(
       home : Scaffold(
-        backgroundColor:const Color.fromARGB(255, 64, 113, 213),
+        backgroundColor:AppColors.background,
         
         body:
         SingleChildScrollView(
