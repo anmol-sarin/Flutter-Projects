@@ -7,16 +7,16 @@ void main() {
 }
 
 class MyApp extends StatelessWidget{
- const MyApp({super.key});
+//  const MyApp({super.key});
   @override
   Widget build(BuildContext context){
     return MaterialApp(
       theme:ThemeData(
         textTheme: TextTheme(
-          bodyMedium: TextStyle(color: Colors.white)
+          bodyMedium: TextStyle(color: const Color.fromARGB(255, 255, 101, 101))
         )
       ),
-      initialRoute:'/',
+      // initialRoute:'/',
       routes:{
         '/':(context)=>LoginPage(),
         '/home':(context)=>HomePage(),

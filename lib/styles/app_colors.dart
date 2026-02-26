@@ -7,6 +7,6 @@ class AppColors{
   static const font2 = Color(0xff373737);
   static const disFont = Color(0xffa7a7a7);
   static const disButton = Color(0xff303030);
-  static const background= Color(0xff1a2948);
+  // static const background= Color(0xff1a2948);
   static const textButColor = Color(0xffC2C2C2);
 }
