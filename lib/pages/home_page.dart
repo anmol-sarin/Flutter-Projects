@@ -10,11 +10,11 @@ class HomePage extends StatelessWidget{
       home:Scaffold(
         backgroundColor: AppColors.background,
         body:Center(
-          child:Text("Welcome to Home Page 2 !",
+          child:Text("Welcome to Home Page !",
             style:TextStyle(
               fontSize:30,
               fontWeight:FontWeight.bold,
-              color: const Color.fromARGB(255, 230, 50, 50)
+              color: AppColors.font
             )
           ),
         )
