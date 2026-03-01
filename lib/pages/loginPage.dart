@@ -22,20 +22,20 @@ class LoginPage extends StatelessWidget{
                 Text("Hello, User !",
                   style:TextStyle(
                   fontSize:30,
-                  fontWeight:FontWeight.bold,
+                  // fontWeight:FontWeight.bold,
                   color: AppColors.font
                 )  
               ),
 
 
                 SizedBox(
-                  height:16 ,
+                  // height:16 ,
                 ),
 
 
                 Text("Login to Continue :",
                   style:TextStyle(
-                  color:AppColors.font,
+                  // color:AppColors.font,
                   fontWeight: FontWeight.bold,
                   fontSize:18
                   ),

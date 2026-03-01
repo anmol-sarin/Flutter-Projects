@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget{
           child:Text("Welcome to Home",
             style:TextStyle(
               fontSize:30,
-              fontWeight:FontWeight.bold,
+              // fontWeight:FontWeight.bold,
               color: AppColors.font
             )
           ),
