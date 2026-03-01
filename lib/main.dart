@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       theme:ThemeData(
         textTheme: TextTheme(
-          // bodyMedium: TextStyle(color: Colors.white)
+          bodyMedium: TextStyle(color: Colors.white)
         )
       ),
       initialRoute:'/',
