@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
       home:Scaffold(
-        backgroundColor: AppColors.background,
+        // backgroundColor: AppColors.background,
         body:Center(
           child:Text("Welcome to Home",
             style:TextStyle(
