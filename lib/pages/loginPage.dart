@@ -22,8 +22,8 @@ class LoginPage extends StatelessWidget{
                 Text("Hello, User !",
                   style:TextStyle(
                   fontSize:30,
-                  fontWeight:FontWeight.bold,
-                  color: AppColors.font
+                  // fontWeight:FontWeight.bold,
+                  // color: AppColors.font
                 )  
               ),
 
