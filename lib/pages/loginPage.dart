@@ -20,10 +20,10 @@ class LoginPage extends StatelessWidget{
                 children: [
                 Spacer(),
                 Text("Hello, User !",
-                  style:TextStyle(
-                  fontSize:30,
-                  fontWeight:FontWeight.bold,
-                  color: AppColors.font
+                  // style:TextStyle(
+                  // fontSize:30,
+                  // fontWeight:FontWeight.bold,
+                  // color: AppColors.font
                 )  
               ),
 
