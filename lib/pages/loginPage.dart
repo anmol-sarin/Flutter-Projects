@@ -28,16 +28,16 @@ class LoginPage extends StatelessWidget{
               ),
 
 
-                // SizedBox(
-                //   height:16 ,
-                // ),
+                SizedBox(
+                  height:16 ,
+                ),
 
 
                 Text("Login to Continue :",
                   style:TextStyle(
                   color:AppColors.font,
-                  // fontWeight: FontWeight.bold,
-                  // fontSize:18
+                  fontWeight: FontWeight.bold,
+                  fontSize:18
                   ),
                 ),
 
@@ -46,10 +46,10 @@ class LoginPage extends StatelessWidget{
 
             TextField( 
               decoration:InputDecoration(
-              // hintText:"Username",
-              // border:OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20) )),
-              // filled:true,
-              // fillColor:AppColors.disFont,
+              hintText:"Username",
+              border:OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20) )),
+              filled:true,
+              fillColor:AppColors.disFont,
               )
             ),
 
