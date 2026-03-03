@@ -107,9 +107,9 @@ class LoginPage extends StatelessWidget{
           ),
           ElevatedButton(
             style:ElevatedButton.styleFrom(
-              foregroundColor: Colors.black,
-              backgroundColor:Colors.white,
-              shape:RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(50)))
+              // foregroundColor: Colors.black,
+              // backgroundColor:Colors.white,
+              // shape:RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(50)))
             ),
             onPressed: (){
             print("clicked google !!");
@@ -117,9 +117,9 @@ class LoginPage extends StatelessWidget{
             child:Row(
               mainAxisAlignment:MainAxisAlignment.center,
               children:[
-                Image.asset('assets/images/google.jpg',width:25,height:25),
-                 SizedBox(width:8),
-                Text('Login with Google')]
+                // Image.asset('assets/images/google.jpg',width:25,height:25),
+                //  SizedBox(width:8),
+                // Text('Login with Google')]
               )
           ),
             SizedBox(
