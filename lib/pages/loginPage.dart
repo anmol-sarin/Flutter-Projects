@@ -87,13 +87,13 @@ class LoginPage extends StatelessWidget{
               width:165,
               child: ElevatedButton(
                 style:ElevatedButton.styleFrom(
-                  // foregroundColor: Colors.black,
-                  // backgroundColor: AppColors.primary
+                  foregroundColor: Colors.black,
+                  backgroundColor: AppColors.primary
                 ),
                 onPressed:(){
-                  // Navigator.of(context).pushNamed('/home');
+                  Navigator.of(context).pushNamed('/home');
                 },
-                // child:Text("Login",style:TextStyle(fontWeight:FontWeight.w900))
+                child:Text("Login",style:TextStyle(fontWeight:FontWeight.w900))
               )
             ),
             
