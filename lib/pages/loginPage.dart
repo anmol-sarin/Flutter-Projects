@@ -107,9 +107,9 @@ class LoginPage extends StatelessWidget{
           ),
           ElevatedButton(
             style:ElevatedButton.styleFrom(
-              // foregroundColor: Colors.black,
-              // backgroundColor:Colors.white,
-              // shape:RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(50)))
+              foregroundColor: Colors.black,
+              backgroundColor:Colors.white,
+              shape:RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(50)))
             ),
             onPressed: (){
             print("clicked google !!");
