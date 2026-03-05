@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       theme:ThemeData(
         textTheme: TextTheme(
-          // bodyMedium: TextStyle(color: Colors.white)
+          bodyMedium: TextStyle(color: Colors.white)
         )
       ),
       initialRoute:'/',
       routes:{
-        // '/':(context)=>LoginPage(),
-        // '/home':(context)=>HomePage(),
+        '/':(context)=>LoginPage(),
+        '/home':(context)=>HomePage(),
       }
     );
   }
