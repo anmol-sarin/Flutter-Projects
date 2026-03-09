@@ -14,18 +14,18 @@ class LoginPage extends StatelessWidget{
         body:
         SingleChildScrollView(
           child:Padding(padding: EdgeInsetsGeometry.all(24),
-            child: SizedBox(height: MediaQuery.of(context).size.height,
-              child:
-              Column(
-                children: [
-                Spacer(),
-                Text("Hello, User !",
-                  style:TextStyle(
-                  fontSize:30,
-                  fontWeight:FontWeight.bold,
-                  color: AppColors.font
-                )  
-              ),
+            // child: SizedBox(height: MediaQuery.of(context).size.height,
+            //   child:
+            //   Column(
+            //     children: [
+            //     Spacer(),
+            //     Text("Hello, User !",
+            //       style:TextStyle(
+            //       fontSize:30,
+            //       fontWeight:FontWeight.bold,
+            //       color: AppColors.font
+            //     )  
+            //   ),
 
 
                 SizedBox(
