@@ -19,12 +19,12 @@ class LoginPage extends StatelessWidget{
               Column(
                 children: [
                 Spacer(),
-                Text("Hello, User !",
-                  style:TextStyle(
-                  fontSize:30,
-                  fontWeight:FontWeight.bold,
-                  color: AppColors.font
-                )  
+                // Text("Hello, User !",
+                //   style:TextStyle(
+                //   fontSize:30,
+                //   fontWeight:FontWeight.bold,
+                //   color: AppColors.font
+                // )  
               ),
 
 
