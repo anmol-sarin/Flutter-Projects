@@ -28,9 +28,9 @@ class LoginPage extends StatelessWidget{
               ),
 
 
-                SizedBox(
-                  height:16 ,
-                ),
+                // SizedBox(
+                //   height:16 ,
+                // ),
 
 
                 Text("Login to Continue :",
