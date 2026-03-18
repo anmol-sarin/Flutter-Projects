@@ -21,12 +21,11 @@ class LoginPage extends StatelessWidget{
                 Spacer(),
                 Text("Hello, User !",
                   style:TextStyle(
-                  fontSize:30,
-                  fontWeight:FontWeight.bold,
-                  color: AppColors.font
-                )  
-              ),
-
+                    fontSize:30,
+                    fontWeight:FontWeight.bold,
+                    color: AppColors.font
+                  )  
+                ),
 
                 SizedBox(
                   height:16 ,
@@ -118,7 +117,7 @@ class LoginPage extends StatelessWidget{
               mainAxisAlignment:MainAxisAlignment.center,
               children:[
                 Image.asset('assets/images/google.jpg',width:25,height:25),
-                 SizedBox(width:8),
+                SizedBox(width:8),
                 Text('Login with Google')]
               )
           ),
@@ -137,11 +136,9 @@ class LoginPage extends StatelessWidget{
               child:Row(
                 mainAxisAlignment:MainAxisAlignment.center,
                 children: [
-      
                 Image.asset('assets/images/facebook.jpg',width:30,height:30),
                 SizedBox(width:8),
                 Text("Login with Facebook")
-
               ],
               )
               ),
