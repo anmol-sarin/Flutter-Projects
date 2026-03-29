@@ -11,9 +11,11 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme:ThemeData(
+        
         textTheme: TextTheme(
-          bodyMedium: TextStyle(color: Colors.white)
+        bodyMedium: TextStyle(color: Colors.white)
         )
       ),
       initialRoute:'/',

@@ -9,16 +9,13 @@ class HomePage extends StatelessWidget{
     return MaterialApp(
       home:Scaffold(
         backgroundColor: AppColors.background,
-        body:Center(
-          child:Text("Welcome to Home",
-            style:TextStyle(
-              fontSize:30,
-              fontWeight:FontWeight.bold,
-              color: AppColors.font
-            )
+        appBar:AppBar(
+          title:Text('5mintuteflutter'),
+          actions:[
+            Icon(Icons.location_on_outlined)         ]
           ),
+        body:Container(),
         )
-      )
-    );
+      );
   }
 }

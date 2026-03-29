@@ -150,10 +150,13 @@ class LoginPage extends StatelessWidget{
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Text("Don't have an account ?",style:TextStyle(color: AppColors.font,fontSize: 18)),
+              Text("Don't have an account ?",style:TextStyle(
+                color: AppColors.font,
+                fontSize: 18
+              )),
               TextButton(
                 style:TextButton.styleFrom(
-                  foregroundColor: AppColors.primary
+                foregroundColor: AppColors.primary
                 ),
                 onPressed:(){
                   print("clicked Sign up button");
