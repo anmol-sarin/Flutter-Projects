@@ -20,20 +20,29 @@ class HomePage extends StatelessWidget{
           ),
         body:Column(
           children:[
-            Row(
-              children:[
-               Image.asset('assets/temp/img-1.jpg',
-                width:100,
-                height:50),
-                SizedBox(
-                  width:16,
-                ),
-                Text('Sarah Farnandez',style:TextStyle(color:AppColors.font))
-              ]
-              ),
+            userdata(),
+            userdata(),
+            userdata(),
+            userdata(),
+            userdata(),
+           
           ]
+
         ),
         )
       );
   }
 }
+Widget userdata(){
+  return  Row(
+      children:[
+        Image.asset('assets/temp/img-1.jpg',
+        width:100,
+        height:50),
+        SizedBox(
+        width:16,
+         ),
+        Text('Sarah Farnandez',style:TextStyle(color:AppColors.font))
+      ]
+    );
+  }
