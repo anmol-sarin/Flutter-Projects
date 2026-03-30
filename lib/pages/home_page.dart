@@ -10,11 +10,25 @@ class HomePage extends StatelessWidget{
       home:Scaffold(
         backgroundColor: AppColors.background,
         appBar:AppBar(
-          title:Text('5mintuteflutter'),
+          backgroundColor:AppColors.background,
+          title:Text('5mintuteflutter',style:TextStyle(color:AppColors.font,),), 
+          centerTitle:false,
           actions:[
-            Icon(Icons.location_on_outlined)         ]
+            Icon(Icons.location_on_outlined,
+            color:AppColors.font,),
+          ]
           ),
-        body:Container(),
+        body:Column(
+          children:[
+            Row(
+              children:[
+               Image.asset('assets/temp/img-1.jpg',
+                width:100,
+                height:50),
+              ]
+              )
+          ]
+        ),
         )
       );
   }
