@@ -25,8 +25,12 @@ class HomePage extends StatelessWidget{
                Image.asset('assets/temp/img-1.jpg',
                 width:100,
                 height:50),
+                SizedBox(
+                  width:16,
+                ),
+                Text('Sarah Farnandez',style:TextStyle(color:AppColors.font))
               ]
-              )
+              ),
           ]
         ),
         )
