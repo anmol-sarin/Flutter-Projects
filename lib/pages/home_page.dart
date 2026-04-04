@@ -18,17 +18,7 @@ class HomePage extends StatelessWidget{
             color:AppColors.font,),
           ]
           ),
-        body:Column(
-          children:[
-            userdata(),
-            userdata(),
-            userdata(),
-            userdata(),
-            userdata(),
-           
-          ]
-
-        ),
+        body:ListView(children:userDataList())
         )
       );
   }
@@ -46,3 +36,11 @@ Widget userdata(){
       ]
     );
   }
+
+List<Widget> userDataList(){
+  List<Widget> list1 = [];
+  for(var i = 0 ; i<1000;i++){
+    list1.add(userdata());
+  }
+  return list1;
+}

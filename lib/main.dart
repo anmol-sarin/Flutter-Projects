@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:new_application/pages/home_page.dart';
 import 'package:new_application/pages/loginPage.dart';
+import 'package:new_application/pages/mainPage.dart';
+import 'package:new_application/pages/test_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,11 +20,13 @@ class MyApp extends StatelessWidget{
         bodyMedium: TextStyle(color: Colors.white)
         )
       ),
-      initialRoute:'/',
-      routes:{
-        '/':(context)=>LoginPage(),
-        '/home':(context)=>HomePage(),
-      }
+      home:TestPage(),
+      // initialRoute:'/',
+      // routes:{
+      //   '/':(context)=>LoginPage(),
+      //   '/home':(context)=>HomePage(),
+      //   '/main':(context)=>MainPage(),
+      // }
     );
   }
 }
