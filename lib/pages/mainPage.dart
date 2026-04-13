@@ -11,6 +11,7 @@ class _MainPageState extends State<MainPage>{
   @override
 
   Widget build(BuildContext context){
+    int currentIndex1 = 0;
     return Scaffold(
       backgroundColor:AppColors.background,
       appBar:AppBar(
@@ -26,8 +27,9 @@ class _MainPageState extends State<MainPage>{
         BottomNavigationBarItem(icon:Icon(Icons.home),label:'home'),
         BottomNavigationBarItem(icon:Icon(Icons.favorite,),label:'favorite'),
         ],
+        currentIndex:currentIndex1,
         onTap:(index){
-          print(index);
+          currentIndex1 = index;
         }
       )
     );
