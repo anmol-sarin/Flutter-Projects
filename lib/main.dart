@@ -20,13 +20,13 @@ class MyApp extends StatelessWidget{
         bodyMedium: TextStyle(color: Colors.white)
         )
       ),
-      home:TestPage(),
-      // initialRoute:'/',
-      // routes:{
-      //   '/':(context)=>LoginPage(),
-      //   '/home':(context)=>HomePage(),
-      //   '/main':(context)=>MainPage(),
-      // }
+    
+      initialRoute:'/',
+      routes:{
+        '/':(context)=>LoginPage(),
+        '/home':(context)=>HomePage(),
+        '/main':(context)=>MainPage(),
+      }
     );
   }
 }

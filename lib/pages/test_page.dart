@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:new_application/styles/app_colors.dart';
-class TestPage extends StatelessWidget{
-  int count = 1;
-  TestPage({super.key});
 
+class TestPage extends StatefulWidget{
+  @override
+  _TestPageState createState() => _TestPageState();
+}
+
+class _TestPageState extends State<TestPage>{
+  int count = 1;
   @override
   Widget build(BuildContext context){
     return Scaffold(
+      backgroundColor: AppColors.background,
       appBar:AppBar(
         backgroundColor: AppColors.background,
         elevation:4
@@ -16,9 +21,14 @@ class TestPage extends StatelessWidget{
       ),
       floatingActionButton:FloatingActionButton(
         onPressed:(){
+          setState((){
+            count++;
+          });
         },
         child:Icon(Icons.add),
         )
+      
     );
   }
 }
+
